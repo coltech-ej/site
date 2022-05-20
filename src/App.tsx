@@ -1,5 +1,11 @@
+import { Helmet } from 'react-helmet';
+
 function App() {
-	return <h1>Hello, World!</h1>;
+	return (
+		<Helmet>
+			<title>Coltech | Home</title>
+		</Helmet>
+	);
 }
 
 export default App;
