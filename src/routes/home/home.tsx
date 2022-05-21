@@ -2,6 +2,7 @@ import { Flex } from '@chakra-ui/react';
 import { Helmet } from 'react-helmet-async';
 
 import { Title, Footer } from '../../components';
+import { Banner } from '../../components/banner/banner';
 
 function Home() {
 	return (
@@ -10,9 +11,11 @@ function Home() {
 				<Helmet>
 					<title>Coltech | Home</title>
 				</Helmet>
+				<Banner />
 
-				<Title name="Portfólio" />
+
 			</main>
+
 			<Footer />
 		</Flex>
 	);
