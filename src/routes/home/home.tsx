@@ -1,13 +1,20 @@
-import { Box } from '@chakra-ui/react';
-import CardImage from '../../components/card-image/card-image';
-// import { CardImage, Title } from '../../components';
-import Title from '../../components/title/title';
+import { Flex } from '@chakra-ui/react';
+import { Helmet } from 'react-helmet-async';
+
+import { Title, Footer } from '../../components';
+
 function Home() {
 	return (
-		<Box className="Portfolio">
-			<Title name="Portfólio" />
-			<CardImage></CardImage>
-		</Box>
+		<Flex h="100vh" direction="column">
+			<main>
+				<Helmet>
+					<title>Coltech | Home</title>
+				</Helmet>
+
+				<Title name="Portfólio" />
+			</main>
+			<Footer />
+		</Flex>
 	);
 }
 

@@ -4,13 +4,11 @@ type titleProps = {
 	name: string;
 };
 
-function Title({ name }: titleProps) {
+export function Title({ name }: titleProps) {
 	return (
-		<Box padding={'15px'}>
+		<Box padding="4">
 			<Heading fontSize={28}>{name}</Heading>
-			<Box height="5px" width="55px" bgColor="#F27F02" />
+			<Box height="5px" width="55px" bgColor="orange" />
 		</Box>
 	);
 }
-
-export default Title;

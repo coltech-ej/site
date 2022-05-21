@@ -1,2 +1,2 @@
-export { default as Title } from './title/title';
-export { default as CardImage } from './card-image/card-image';
+export { Title } from './title/title';
+export { Footer } from './footer/footer';

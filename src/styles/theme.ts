@@ -7,6 +7,7 @@ export const theme = extendTheme({
 			100: '##F1F1F1',
 		},
 		white: '#FFFFFF',
+		orange: '#F27F02',
 	},
 	fonts: {
 		body: 'Work Sans',
