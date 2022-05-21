@@ -4,14 +4,9 @@ import Home from './routes/home/home';
 
 function App() {
 	return (
-		<main>
-			<Helmet>
-				<title>Coltech | Home</title>
-			</Helmet>
-			<Routes>
-				<Route path="/" element={<Home />} />
-			</Routes>
-		</main>
+		<Routes>
+			<Route path="/" element={<Home />} />
+		</Routes>
 	);
 }
 
