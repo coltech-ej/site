@@ -1,10 +1,12 @@
-import { Title } from '../../components';
+import { Helmet } from 'react-helmet-async';
 
 function Home() {
 	return (
-		<section className="Portfolio">
-			{/*<Title name="Portfólio"></Title>*/}
-		</section>
+		<main>
+			<Helmet>
+				<title>Coltech | Home</title>
+			</Helmet>
+		</main>
 	);
 }
 
