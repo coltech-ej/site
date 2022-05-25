@@ -4,7 +4,7 @@ import { Navigation } from 'swiper';
 // eslint-disable-next-line import/no-unresolved
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Footer, Header, Title } from '../../components';
+import { Footer, Header, Title, CardService, Button } from '../../components';
 import { Banner } from '../../components/banner/banner';
 
 // Import Swiper styles
@@ -26,15 +26,50 @@ function Home() {
 
 				<Banner />
 
-				<Title name="Nossos Serviços" color="white" />
+				<Flex as="section" direction="column" pt="4" pb="12" align="center">
+					<Title
+						mx="4"
+						name="Nossos Serviços"
+						color="white"
+						alignSelf="flex-start"
+					/>
 
-				<Flex w="100%" h="xs">
-					<Swiper slidesPerView={1} navigation modules={[Navigation]}>
-						<SwiperSlide>Slide 1</SwiperSlide>
-						<SwiperSlide>Slide 2</SwiperSlide>
-						<SwiperSlide>Slide 3</SwiperSlide>
-						<SwiperSlide>Slide 4</SwiperSlide>
-					</Swiper>
+					<Flex w="100%" h="lg">
+						<Swiper slidesPerView={1} navigation modules={[Navigation]}>
+							<SwiperSlide
+								style={{
+									padding: 32,
+								}}
+							>
+								<CardService />
+							</SwiperSlide>
+							<SwiperSlide
+								style={{
+									padding: 32,
+								}}
+							>
+								<CardService />
+							</SwiperSlide>
+							<SwiperSlide
+								style={{
+									padding: 32,
+								}}
+							>
+								<CardService />
+							</SwiperSlide>
+							<SwiperSlide
+								style={{
+									padding: 32,
+								}}
+							>
+								<CardService />
+							</SwiperSlide>
+						</Swiper>
+					</Flex>
+
+					<Button bg="transparent" borderRadius="20">
+						Ver serviços
+					</Button>
 				</Flex>
 			</main>
 
