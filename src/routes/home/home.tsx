@@ -26,20 +26,10 @@ function Home() {
 
 				<Banner />
 
-				<Title name="Nossos Serviços" />
+				<Title name="Nossos Serviços" color="white" />
 
 				<Flex w="100%" h="xs">
-					<Swiper
-						slidesPerView={1}
-						spaceBetween={30}
-						loop
-						pagination={{
-							clickable: true,
-						}}
-						navigation
-						modules={[Navigation]}
-						className="mySwiper"
-					>
+					<Swiper slidesPerView={1} navigation modules={[Navigation]}>
 						<SwiperSlide>Slide 1</SwiperSlide>
 						<SwiperSlide>Slide 2</SwiperSlide>
 						<SwiperSlide>Slide 3</SwiperSlide>

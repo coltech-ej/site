@@ -1,6 +1,8 @@
+
 .swiper {
   width: 100%;
   height: 100%;
+  display: flex;
 }
 
 .swiper-slide {
@@ -9,19 +11,23 @@
   background: transparent;
 }
 
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .swiper-button-prev, .swiper-button-next{
   color: #F27F02;
-  width: 36px;
-  height: 36px;
+  width: 2.25rem;
+  height: 2.25rem;
   background: #FFF;
+  border-radius: 50%;
+  margin-top: calc((20rem * 32)/100);
 
-  :after {
-    width: 10px;
-    height: 10px;
+  &:after {
+    font-size: 16px;
   }
+}
+
+.swiper-button-prev {
+  left: 37.5%;
+}
+
+.swiper-button-next {
+  right: 37.5%;
 }
