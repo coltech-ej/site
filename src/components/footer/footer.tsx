@@ -17,7 +17,7 @@ import {
 	FaYoutube,
 } from 'react-icons/fa';
 
-import { Button } from './button';
+import { Button } from '../button';
 
 export function Footer() {
 	return (
@@ -50,7 +50,7 @@ export function Footer() {
 				<ListItem>Contato</ListItem>
 			</UnorderedList>
 
-			<Button name="Orçamento" />
+			<Button>Orçamento</Button>
 
 			<Grid templateColumns="repeat(5, 1fr)" gap={3} mx="auto" my="4">
 				<GridItem>
