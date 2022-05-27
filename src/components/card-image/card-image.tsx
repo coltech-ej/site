@@ -3,18 +3,19 @@ import { Box, Flex, Heading } from '@chakra-ui/react';
 type CardImageProps = {
 	tag: string;
 	title: string;
+	url: string;
 };
 
-export function CardImage({ tag, title }: CardImageProps) {
+export function CardImage({ url, tag, title }: CardImageProps) {
 	return (
-		<Flex h="500px" align="center" justifyContent="center">
+		<Flex justifyContent="center" marginBottom="4">
 			<Flex
-				w="85%"
-				h="450px"
+				w="80%"
+				h="400"
 				alignItems="flex-end"
 				borderRadius="10"
 				bgColor="grey"
-				// bgImage="linear-gradient(rgba(0,0,0, 0.5), rgba(0, 0, 0,0.6)), url('src/assets/card-eletrica.jpg')"
+				background={`linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${url})`}
 				bgSize="cover"
 			>
 				<Box marginLeft="5" marginBottom="5">
