@@ -1,13 +1,13 @@
-import { Box, Heading } from '@chakra-ui/react';
+import { Box, BoxProps, Heading } from '@chakra-ui/react';
 
-interface ITitleProps {
+interface ITitleProps extends BoxProps {
 	name: string;
 	color: string;
 }
 
-export function Title({ name, color }: ITitleProps) {
+export function Title({ name, color, ...rest }: ITitleProps) {
 	return (
-		<Box>
+		<Box {...rest}>
 			<Heading fontSize={28} color={color}>
 				{name}
 			</Heading>
