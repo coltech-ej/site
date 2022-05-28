@@ -4,21 +4,25 @@ type CardImageProps = {
 	tag: string;
 	title: string;
 	url: string;
+	h?: string;
 };
 
-export function CardImage({ url, tag, title }: CardImageProps) {
+export function CardImage({ url, tag, title, h }: CardImageProps) {
 	return (
-		<Flex justifyContent="center" marginBottom="4">
+		<Flex justifyContent="center" mt="5">
 			<Flex
-				w="80%"
-				h="400"
+				w="85%"
+				h={h}
+				paddingRight="5"
+				paddingLeft="5"
+				paddingBottom="5"
 				alignItems="flex-end"
 				borderRadius="10"
 				bgColor="grey"
 				background={`linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${url})`}
 				bgSize="cover"
 			>
-				<Box marginLeft="5" marginBottom="5">
+				<Box>
 					<Box
 						bgColor="orange"
 						display="inline-flex"
@@ -30,9 +34,15 @@ export function CardImage({ url, tag, title }: CardImageProps) {
 						{tag}
 					</Box>
 					<br />
-					<Heading size="md">{title}</Heading>
+					<Box>
+						<Heading size="md">{title}</Heading>
+					</Box>
 				</Box>
 			</Flex>
 		</Flex>
 	);
 }
+
+CardImage.defaultProps = {
+	h: '400',
+};

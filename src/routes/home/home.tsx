@@ -11,8 +11,9 @@ import {
 	CardService,
 	Button,
 	InfoCorp,
+	Banner,
+	CardImage,
 } from '../../components';
-import { Banner } from '../../components/banner/banner';
 
 // Import Swiper styles
 // eslint-disable-next-line import/no-unresolved
@@ -70,8 +71,29 @@ function Home() {
 					</Grid>
 				</Flex>
 
-				<Flex as="section" direction="column" pt="4" pb="12" align="center">
+				<Flex direction="column" pt="4">
 					<Title mx="4" name="Portfólio" color="white" alignSelf="flex-start" />
+					<CardImage
+						url="src/assets/card-eletrica.jpg"
+						tag="Elétrica"
+						title="Serviços de Elétrica"
+					/>
+					<CardImage
+						url="src/assets/card-analise-tarifaria.jpg"
+						h="200"
+						tag="Elétrica"
+						title="Análise Tarifária"
+					/>
+					<CardImage
+						url="src/assets/card-mecanica.png"
+						tag="Mecânica"
+						title="Maquina Separadora de Seixo"
+					/>
+					<Flex justify="center" pt="10" pb="10">
+						<Button bg="transparent" borderRadius="20">
+							Ver serviços
+						</Button>
+					</Flex>
 				</Flex>
 
 				<Flex as="section" direction="column" pt="4" pb="12" align="center">

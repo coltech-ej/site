@@ -15,7 +15,3 @@ export function Title({ name, color, ...rest }: ITitleProps) {
 		</Box>
 	);
 }
-
-Title.defaultProps = {
-	color: 'white',
-};

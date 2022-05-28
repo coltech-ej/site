@@ -5,3 +5,4 @@ export { Button } from './button';
 export { CardService } from './card-service/cardService';
 export { InfoCorp } from './info-corp';
 export { CardImage } from './card-image/card-image';
+export { Banner } from './banner/banner';
