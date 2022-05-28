@@ -13,6 +13,7 @@ import {
 	InfoCorp,
 } from '../../components';
 import { Banner } from '../../components/banner/banner';
+import { OurPartners } from '../../components/our-partners/our-partners';
 
 // Import Swiper styles
 // eslint-disable-next-line import/no-unresolved
