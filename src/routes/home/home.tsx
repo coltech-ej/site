@@ -13,7 +13,6 @@ import {
 	InfoCorp,
 } from '../../components';
 import { Banner } from '../../components/banner/banner';
-import { OurPartners } from '../../components/our-partners/our-partners';
 
 // Import Swiper styles
 // eslint-disable-next-line import/no-unresolved
@@ -72,6 +71,10 @@ function Home() {
 				</Flex>
 
 				<Flex as="section" direction="column" pt="4" pb="12" align="center">
+					<Title mx="4" name="Portfólio" color="white" alignSelf="flex-start" />
+				</Flex>
+
+				<Flex as="section" direction="column" pt="4" pb="12" align="center">
 					<Title
 						mx="4"
 						name="Nossos Serviços"
@@ -115,6 +118,29 @@ function Home() {
 					<Button bg="transparent" borderRadius="20">
 						Ver serviços
 					</Button>
+				</Flex>
+				<Flex
+					as="section"
+					direction="column"
+					pt="4"
+					pb="12"
+					align="center"
+					bgColor="gray.100"
+				>
+					<Title
+						mx="4"
+						name="Nossos parceiros"
+						color="gray.500"
+						alignSelf="flex-start"
+					/>
+				</Flex>
+				<Flex as="section" direction="column" pt="4" pb="12" align="center">
+					<Title
+						mx="4"
+						name="Nossos clientes"
+						color="white"
+						alignSelf="flex-start"
+					/>
 				</Flex>
 			</main>
 
