@@ -1,17 +1,24 @@
-import { Flex, Image } from '@chakra-ui/react';
+import { Flex, GridItem } from '@chakra-ui/react';
 
 type frameProps = {
-	url?: string;
+	url: string;
+	size?: string;
 };
 
-export function Frame({ url }: frameProps) {
+export function Frame({ url, size }: frameProps) {
 	return (
-		<Flex flexGrow="1" border="1px solid yellow" justify="center">
-			<Image src={`url(${url})`} border="1px solid green" bgSize="cover" />;
-		</Flex>
+		<GridItem>
+			<Flex
+				bgImage={`url(${url})`}
+				w="100%"
+				h="100%"
+				bgRepeat="no-repeat"
+				bgSize={size}
+			/>
+		</GridItem>
 	);
 }
 
 Frame.defaultProps = {
-	url: "'src/assets/icon-arco.png'",
+	size: 'contain',
 };

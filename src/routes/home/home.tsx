@@ -13,6 +13,8 @@ import {
 	InfoCorp,
 	Banner,
 	CardImage,
+	OurPartners,
+	Frame,
 } from '../../components';
 
 // Import Swiper styles
@@ -141,28 +143,32 @@ function Home() {
 						Ver serviços
 					</Button>
 				</Flex>
-				<Flex
-					as="section"
-					direction="column"
-					pt="4"
-					pb="12"
-					align="center"
-					bgColor="gray.100"
-				>
-					<Title
-						mx="4"
-						name="Nossos parceiros"
-						color="gray.500"
-						alignSelf="flex-start"
-					/>
-				</Flex>
-				<Flex as="section" direction="column" pt="4" pb="12" align="center">
+				<OurPartners />
+				<Flex direction="column" pt="4" pb="12">
 					<Title
 						mx="4"
 						name="Nossos clientes"
 						color="white"
 						alignSelf="flex-start"
 					/>
+					<Grid
+						templateColumns="repeat(3, 1fr)"
+						templateRows="repeat(3,1fr)"
+						gap="3"
+						pl="3"
+						pr="3"
+						mt="45"
+						h="370"
+					>
+						<Frame url="src/assets/icon-mundi.png" />
+						<Frame url="src/assets/icon-golden.png" />
+						<Frame url="src/assets/icon-maricotas.png" />
+						<Frame url="src/assets/icon-ecoa.png" />
+						<Frame url="src/assets/icon-starthub.png" />
+						<Frame url="src/assets/icon-kinergy.png" />
+						<Frame url="src/assets/icon-pollaris.png" />
+						<Frame url="src/assets/icon-empeal.png" />
+					</Grid>
 				</Flex>
 			</main>
 

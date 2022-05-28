@@ -6,3 +6,5 @@ export { CardService } from './card-service/cardService';
 export { InfoCorp } from './info-corp';
 export { CardImage } from './card-image/card-image';
 export { Banner } from './banner/banner';
+export { OurPartners } from './our-partners/our-partners';
+export { Frame } from './frame/frame';
