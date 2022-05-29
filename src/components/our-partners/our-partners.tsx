@@ -1,25 +1,29 @@
-import { Flex, Grid, GridItem } from '@chakra-ui/react';
+import { Flex, Grid } from '@chakra-ui/react';
 
 import { Frame } from '../frame/frame';
 import { Title } from '../title/title';
 
 export function OurPartners() {
 	return (
-		<Flex w="100vw" bgColor="gray.100" direction="column">
-			<Title name="Nossos parceiros" color="gray.500" />
-			<Flex grow="1" marginBottom="25" marginTop="25">
-				<Grid w="100%" h="60%" marginTop="0.5" templateColumns="repeat(3, 1fr)">
-					<GridItem border="1px solid black">
-						<Frame />
-					</GridItem>
-					<GridItem border="1px solid black">
-						<Frame />
-					</GridItem>
-					<GridItem border="1px solid black">
-						<Frame />
-					</GridItem>
-				</Grid>
-			</Flex>
+		<Flex bgColor="gray.100" direction="column" pt="4" pb="12">
+			<Title
+				mx="4"
+				name="Nossos parceiros"
+				color="gray.500"
+				alignSelf="flex-start"
+			/>
+			<Grid
+				templateColumns="repeat(3, 1fr)"
+				mt="45"
+				gap="3"
+				minH="120"
+				pl="3"
+				pr="3"
+			>
+				<Frame url="src/assets/icon-arco.png" />
+				<Frame url="src/assets/icon-labtekh.png" />
+				<Frame url="src/assets/icon-energyc.png" />
+			</Grid>
 		</Flex>
 	);
 }
